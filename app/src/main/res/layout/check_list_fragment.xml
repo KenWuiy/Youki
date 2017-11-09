@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_check"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:text="账单记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_centerInParent="true"
+            android:id="@+id/spinner_time_up_or_down"
+            android:entries="@array/order_type"
+            android:layout_toRightOf="@id/tv_check"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+        <Button
+            android:onClick="click_query_history_check"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="查询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fl_check_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
